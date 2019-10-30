@@ -466,7 +466,7 @@ def get_lane_graph(netfile,
             for _, element in tree:
                 lane_id = element.get('lane')
                 if lane_id in graph.nodes:
-                    if 'detectors' not in graph.node[lane_id]:
+                    if 'detectors' not in graph.node[lane_id]: # TODO: Fix NetworkX compatibility
                         graph.node[lane_id]['detectors'] = {}
 
                     detector_info_dict = dict(element.items())
