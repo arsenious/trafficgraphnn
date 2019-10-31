@@ -147,4 +147,3 @@ pylintrc
 .gitignore.orig
 *.tex
 *.yaml
-/.directory
